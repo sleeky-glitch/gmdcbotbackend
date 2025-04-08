@@ -15,7 +15,7 @@ class OpenAIService:
         """
         try:
             response = self.client.embeddings.create(
-                model="text-embedding-ada-002",
+                model="text-embedding-3-small",
                 input=text
             )
             # Extract the embedding vector from the response
