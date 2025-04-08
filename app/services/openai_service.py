@@ -52,7 +52,4 @@ class OpenAIService:
             if context:
                 return await self.generate_response(context, query)
             else:
-                # Generate a response without specific context
-                return await self.generate_response("", query)
-        except Exception as e:
-            raise Exception(f"Query processing failed: {str(e)}")
+                raise Exception(f"Query processing failed: {str(e)}")
