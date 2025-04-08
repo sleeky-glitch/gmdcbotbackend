@@ -20,7 +20,7 @@ openai_service = OpenAIService()
 
 @app.get("/")
 async def root():
-    return {"message": "AMC Chatbot API is running"}
+    return {"message": "GMDC Chatbot API is running"}
 
 @app.post("/query", response_model=QueryResponse)
 async def handle_query(request: QueryRequest):
